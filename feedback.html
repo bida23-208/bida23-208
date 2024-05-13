@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<title>Feedback Form</title>
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark">
+          <div class="container">
+            <a href="index.html">
+                <img class="d-inline-block align-top" src="Warner-Bros-Logo.png" width="70" height="50"></img></a>
+    
+            <div class="collapse navbar-collapse" id="navmenu">
+               <ul class="navbar-nav ms-auto">
+                  <li class="Home">
+                      <a href="index.html" class="nav-link">Home</a>
+                  </li>
+                  <li class="Movies">
+                      <a href="movies.html" class="nav-link">Movies</a>
+                  </li>
+                  <li class="TV shows">
+                      <a href="tv-shows.html" class="nav-link">TV Shows</a>
+                  </li>
+                  <li class="Games & Apps">
+                      <a href="games&apps.html" class="nav-link">Games & Apps</a>
+                  </li>   
+                  <li class="Collections">
+                      <a href="collections.html" class="nav-link">Collections</a>
+                  </li>   
+                  <li class="Feedback">
+                      <a href="feedback.html" class="nav-link">Feedback</a>
+                  </li>   
+               </ul>
+            </div>
+            <form>
+              <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            </form>
+          </div>
+      </nav>
+    </header>
+
+    <div class="feedback-container">
+        <h2>Customer Feedback</h2>
+        <form id="feedback-form">
+            <div class="form-group">
+                <input type="radio" id="satisfied" name="feedback" value="highly_satisfied">
+                <label for="satisfied">I am highly satisfied</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="satisfied" name="feedback" value="satisfied">
+                <label for="satisfied">I am satisfied</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="neutral" name="feedback" value="neutral">
+                <label for="neutral">Neutral</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="dissatisfied" name="feedback" value="dissatisfied">
+                <label for="dissatisfied">Dissatisfied</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="unsatisfied" name="feedback" value="highly_unsatisfied">
+                <label for="unsatisfied">Highly unsatisfied</label>
+            </div>
+            <button type="submit" class="submit-btn">Submit Feedback</button>
+        </form>
+        <div id="submit-msg" class="submit-msg" style="display: none;">Your feedback was submitted, thank you 😊</div>
+    </div>
+    
+<script>
+document.getElementById('feedback-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+    document.getElementById('submit-msg').style.display = 'block'; // Display submission message
+});
+</script>
+
+<!-- FOOTER -->
+<footer class="container-footer">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2024 WarnerBros. All rights reserved.&middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</body>
+</html>

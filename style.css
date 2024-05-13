@@ -1,0 +1,89 @@
+.movie-list-title{
+    margin-top: 20px;
+}
+
+.movie-list-container {
+    padding: 0 20px;
+  }
+  
+  .movie-list-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .movie-list {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+  }
+  
+  .movie-list-item {
+    margin-right: 30px;
+    position: relative;
+  }
+  
+  .movie-list-item:hover .movie-list-item-img {
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+  }
+  
+  .movie-list-item:hover .movie-list-item-title,
+  .movie-list-item:hover .movie-list-item-desc,
+  .movie-list-item:hover .movie-list-item-button {
+    opacity: 1;
+  }
+  
+  .movie-list-item-img {
+    transition: all 1s ease-in-out;
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 15px;
+  }
+  
+  .movie-list-item-title {
+    background-color: white;
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+  }
+  
+.container-movies-for-you{
+    margin-left:40%;
+    margin-top: 50px;
+    
+}
+
+.tvshows-container{
+    margin-left:45%;
+    margin-top: 50px;
+}
+
+.games-container{
+    margin-left:100PX;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.collections-container{
+    margin-left: 40%;
+    margin-top: 50px;
+}
+
+.feedback-container{
+  margin-left: 40%;
+  margin-top: 50px;
+}
+
+.container-footer{
+  margin-top: 20%;
+}
